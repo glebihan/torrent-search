@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-20 11:42+0100\n"
+"PO-Revision-Date: 2016-03-20 11:42+0100\n"
+"Last-Translator: Gwendal Le Bihan <gwendal.lebihan.dev@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/TorrentSearch/ui/PluginsUpdateDialog.py:9
+msgid "Updating plugins"
+msgstr "Mise à jour des plugins en cours"
+
+#: src/TorrentSearch/ui/PluginsUpdateDialog.py:17
+msgid "Downloading plugin updates... Please wait..."
+msgstr "Téléchargement des mises à jour de plugins... Veuillez patienter..."
+
+#: src/TorrentSearch/ui/SearchBox.py:15
+msgid "Search"
+msgstr "Recherche"
+
+#: src/TorrentSearch/ui/SettingsWidgets.py:209
+msgid "Magnet link"
+msgstr "Lien magnet"
+
+#: src/TorrentSearch/ui/SettingsWidgets.py:210
+msgid "Download torrent file"
+msgstr "Téléchargement du fichier torrent"
+
+#: src/TorrentSearch/ui/MainMenuButton.py:15
+#: src/TorrentSearch/ui/PreferencesDialog.py:10
+msgid "Preferences"
+msgstr "Préférences"
+
+#: src/TorrentSearch/ui/MainMenuButton.py:16
+msgid "About"
+msgstr "À propos"
+
+#: src/TorrentSearch/ui/MainMenuButton.py:19
+msgid "Quit"
+msgstr "Quitter"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:18
+msgid "Close"
+msgstr "Fermer"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:28 data/settings.json:12
+msgid "General"
+msgstr "Général"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:33
+msgid "Search plugins"
+msgstr "Plugins de recherche"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:38
+msgid "Plugin"
+msgstr "Plugin"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:48
+#: src/TorrentSearch/ui/PreferencesDialog.py:63
+#: src/TorrentSearch/ui/PreferencesDialog.py:73
+#: src/TorrentSearch/ui/Sidebar.py:14
+msgid "URL"
+msgstr "URL"
+
+#: src/TorrentSearch/ui/PreferencesDialog.py:54
+msgid "Advanced"
+msgstr "Avancé"
+
+#: src/TorrentSearch/ui/Sidebar.py:9 src/TorrentSearch/ui/ResultsPane.py:7
+msgid "Title"
+msgstr "Titre"
+
+#: src/TorrentSearch/ui/Sidebar.py:10 src/TorrentSearch/ui/Sidebar.py:62
+#: src/TorrentSearch/ui/ResultsPane.py:9 data/settings.json:22
+#: data/settings.json:24
+msgid "Size"
+msgstr "Taille"
+
+#: src/TorrentSearch/ui/Sidebar.py:11 src/TorrentSearch/ui/ResultsPane.py:8
+msgid "Date"
+msgstr "Date"
+
+#: src/TorrentSearch/ui/Sidebar.py:12 src/TorrentSearch/ui/ResultsPane.py:10
+msgid "Seeders"
+msgstr "Seeders"
+
+#: src/TorrentSearch/ui/Sidebar.py:13 src/TorrentSearch/ui/ResultsPane.py:11
+msgid "Leechers"
+msgstr "Leechers"
+
+#: src/TorrentSearch/ui/Sidebar.py:27
+msgid "Torrent info"
+msgstr "Information sur le torrent"
+
+#: src/TorrentSearch/ui/Sidebar.py:45
+msgid "Files list"
+msgstr "Liste des fichiers"
+
+#: src/TorrentSearch/ui/Sidebar.py:57
+msgid "Filename"
+msgstr "Nom de fichier"
+
+#: src/TorrentSearch/ui/Sidebar.py:81
+msgid "Value"
+msgstr "Valeur"
+
+#: src/TorrentSearch/ui/Sidebar.py:152
+msgid "Loading..."
+msgstr "Chargement en cours..."
+
+#: src/TorrentSearch/ui/DownloadsView.py:20 data/settings.json:8
+#: data/settings.json:10
+msgid "Downloads"
+msgstr "Téléchargements"
+
+#: data/settings.json:1
+msgid "Date format"
+msgstr "Format de date"
+
+#: data/settings.json:2
+msgid "Display"
+msgstr "Affichage"
+
+#: data/settings.json:3
+msgid "Check for plugin updates on startup"
+msgstr "Vérifier les mises à jour de plugins au démarrage"
+
+#: data/settings.json:4 data/settings.json:6
+msgid "Network"
+msgstr "Réseau"
+
+#: data/settings.json:5
+msgid "User Agent"
+msgstr "User Agent"
+
+#: data/settings.json:7
+msgid "Preferred method"
+msgstr "Méthode préférée"
+
+#: data/settings.json:9
+msgid "Torrent client"
+msgstr "Client Bittorent"
+
+#: data/settings.json:11
+msgid "Hide torrents with no seeders"
+msgstr "Cacher les torrents sans seeders"
+
+#: data/settings.json:13
+msgid "Show only torrents with all words in name"
+msgstr "Afficher seulement les torrents contenant tous les mots de la recherche"
+
+#: data/settings.json:14 data/settings.json:16 data/settings.json:18
+#: data/settings.json:20
+msgid "Keywords"
+msgstr "Mots-clés"
+
+#: data/settings.json:15
+msgid "Show only torrents with exact phrase in name"
+msgstr "Afficher seulement les torrents contenant l'expression exacte de la recherche"
+
+#: data/settings.json:17
+msgid "Name contains"
+msgstr "Le nom contient"
+
+#: data/settings.json:19
+msgid "Name does not contain"
+msgstr "Le nom ne contient pas"
+
+#: data/settings.json:21
+msgid "Minimum size"
+msgstr "Taille minimale"
+
+#: data/settings.json:23
+msgid "Maximum size"
+msgstr "Taille maximale"
+
+#: data/settings.json:25
+msgid "Minimum date"
+msgstr "Date minimale"
+
+#: data/settings.json:26 data/settings.json:28
+msgid "Dates"
+msgstr "Dates"
+
+#: data/settings.json:27
+msgid "Maximum date"
+msgstr "Date maximale"

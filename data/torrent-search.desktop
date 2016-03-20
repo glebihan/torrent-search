@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=Torrent Search
+GenericName=Torrent Search
+Comment=Search for torrents on different websites
+Icon=torrent-search
+Exec=torrent-search
+Terminal=false
+Categories=Network;

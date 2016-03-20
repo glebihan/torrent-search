@@ -1,0 +1,206 @@
+{
+    "settings": {
+        "Network": [
+            {
+                "key": "check_plugin_updates_on_startup",
+                "label": "Check for plugin updates on startup",
+                "type": "bool",
+                "default": true,
+                "save": true,
+                "preferences_section": "Advanced",
+                "preferences_subsection": "Network",
+                "widget": "Switch"
+            },
+            {
+                "key": "plugins_db_version",
+                "type": "int",
+                "default": 0,
+                "save": true
+            },
+            {
+                "key": "http_user_agent",
+                "label": "User Agent",
+                "type": "str",
+                "default": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/49.0.2623.39 Chrome/49.0.2623.39 Safari/537.36",
+                "save": true,
+                "preferences_section": "Advanced",
+                "preferences_subsection": "Network",
+                "widget": "Entry"
+            }
+        ],
+        "Downloads": [
+            {
+                "key": "preferred_method",
+                "label": "Preferred method",
+                "type": "str",
+                "default": "download",
+                "save": true,
+                "preferences_section": "General",
+                "preferences_subsection": "Downloads",
+                "widget": "DownloadMethodCombo"
+            },
+            {
+                "key": "torrent_client",
+                "label": "Torrent client",
+                "type": "str",
+                "save": true,
+                "default": "special::default_torrent_client_id",
+                "preferences_section": "General",
+                "preferences_subsection": "Downloads",
+                "widget": "TorrentClientCombo"
+            }
+        ],
+        "Plugins": [
+            {
+                "key": "disabled_plugins",
+                "type": "str",
+                "default": "",
+                "save": true
+            }
+        ],
+        "Display": [
+            {
+                "key": "date_format",
+                "label": "Date format",
+                "type": "str",
+                "default": "%x",
+                "save": true,
+                "preferences_section": "General",
+                "preferences_subsection": "Display",
+                "widget": "Entry"
+            },
+            {
+                "key": "window_width",
+                "type": "int",
+                "default": 1024,
+                "save": true
+            },
+            {
+                "key": "window_height",
+                "type": "int",
+                "default": 768,
+                "save": true
+            },
+            {
+                "key": "preferences_dialog_width",
+                "type": "int",
+                "default": 400,
+                "save": true
+            },
+            {
+                "key": "preferences_dialog_height",
+                "type": "int",
+                "default": 300,
+                "save": true
+            },
+            {
+                "key": "paned_position",
+                "type": "int",
+                "default": 250,
+                "save": true
+            },
+            {
+                "key": "window_maximized",
+                "type": "bool",
+                "default": false,
+                "save": true
+            }
+        ],
+        "Search options": [
+            {
+                "key": "hide_torrents_with_no_seeders",
+                "label": "Hide torrents with no seeders",
+                "type": "bool",
+                "default": true,
+                "save": true,
+                "filters_section": "General",
+                "widget": "Switch"
+            },
+            {
+                "key": "show_only_torrents_with_all_words_in_name",
+                "label": "Show only torrents with all words in name",
+                "type": "bool",
+                "default": true,
+                "save": true,
+                "filters_section": "Keywords",
+                "widget": "Switch"
+            },
+            {
+                "key": "show_only_torrents_with_exact_phrase_in_name",
+                "label": "Show only torrents with exact phrase in name",
+                "type": "bool",
+                "default": false,
+                "save": true,
+                "filters_section": "Keywords",
+                "widget": "Switch"
+            },
+            {
+                "key": "name_contains",
+                "label": "Name contains",
+                "type": "str",
+                "default": "",
+                "save": false,
+                "filters_section": "Keywords",
+                "widget": "Entry"
+            },
+            {
+                "key": "name_does_not_contain",
+                "label": "Name does not contain",
+                "type": "str",
+                "default": "",
+                "save": false,
+                "filters_section": "Keywords",
+                "widget": "Entry"
+            },
+            {
+                "key": "minimum_size",
+                "label": "Minimum size",
+                "type": "int",
+                "default": -104857600,
+                "save": true,
+                "filters_section": "Size",
+                "widget": "SizeSelector"
+            },
+            {
+                "key": "maximum_size",
+                "label": "Maximum size",
+                "type": "int",
+                "default": -1073741824,
+                "save": true,
+                "filters_section": "Size",
+                "widget": "SizeSelector"
+            },
+            {
+                "key": "minimum_date",
+                "label": "Minimum date",
+                "type": "date",
+                "default": null,
+                "save": false,
+                "filters_section": "Dates",
+                "widget": "DateSelector"
+            },
+            {
+                "key": "maximum_date",
+                "label": "Maximum date",
+                "type": "date",
+                "default": null,
+                "save": false,
+                "filters_section": "Dates",
+                "widget": "DateSelector"
+            }
+        ],
+        "History": [
+            {
+                    "key": "search_history",
+                    "type": "str",
+                    "default": "",
+                    "save": true
+            }
+        ]
+    },
+    "filters_sections_order": ["General", "Keywords", "Size", "Dates"],
+    "preferences_sections_order": {
+        "General": ["Downloads", "Display"],
+        "Advanced": ["Network"]
+    }
+}

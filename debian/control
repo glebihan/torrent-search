@@ -1,0 +1,13 @@
+Source: torrent-search
+Maintainer: Gwendal Le Bihan <gwendal.lebihan.dev@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3, debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://torrent-search.gwendallebihan.net/
+X-Python3-Version: >= 3.0
+
+Package: torrent-search
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Search for torrents on different websites

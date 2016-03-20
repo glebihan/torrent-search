@@ -1,0 +1,40 @@
+#! /usr/bin/env python3
+# -*- Mode: Python; indent-tabs-mode: nil; tab-width: 4; coding: utf-8 -*-
+
+from TorrentSearch.metadata import *
+import gettext
+gettext.install(UNIX_APPNAME + "2", "/usr/share/locale")
+
+from TorrentSearch.main import Application
+import optparse
+import logging
+import os
+import platform
+
+if __name__ == "__main__":
+    prefix = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
+    if os.path.split(prefix)[1] == "share":
+        prefix = os.path.split(prefix)[0]
+
+    optparser = optparse.OptionParser()
+    if platform.system() == "Windows":
+        optparser.add_option('--plugins-dir', dest = "plugins_dir", default = os.path.join(os.getenv("APPDATA"), APPNAME, "plugins"))
+    else:
+        optparser.add_option('--plugins-dir', dest = "plugins_dir", default = os.path.join(os.getenv("HOME"), ".local", "share", UNIX_APPNAME, "plugins"))
+    optparser.add_option('--data-dir', dest = "data_dir", default = os.path.join(prefix, "share", UNIX_APPNAME))
+    optparser.add_option('--debug', dest = "debug", action = "store_true")
+    optparser.add_option('--verbose', dest = "verbose", action = "store_true")
+    optparser.add_option('-s', "--search", dest = "search")
+    cli_options, cli_args = optparser.parse_args()
+    
+    if cli_options.verbose:
+        cli_options.debug = True
+        
+    if cli_options.verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
+    elif cli_options.debug:
+        logging.getLogger().setLevel(logging.WARN)
+    else:
+        logging.getLogger().setLevel(logging.ERROR)
+            
+    Application(cli_options).run()
